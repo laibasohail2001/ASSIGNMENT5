@@ -480,3 +480,392 @@
 //     d=a/b;
 //     document.write("The division of " + a + " and " + b + " is " + d)
 // }
+//CHAPTER 12-13
+//** task 1** */
+// var alphabet=prompt("enter a string")
+// lower=alphabet.charCodeAt(0)
+// if(lower>=65 && lower<=96)
+// {
+//     alert("string is uppercase")
+// }
+// else if(lower>=97 && lower<=122)
+// {
+//     alert("string is lowercase")
+// }
+// else if(lower>=48 && lower<=57)
+// {
+//     alert("its a number")
+// }
+// **task 2***/
+// var a=+prompt("enter a number")
+// var b=+prompt("enter another number")
+// var large=0;
+// if(a>b)
+// {
+//     large=a;
+//     alert(a + " is the largest one")
+// }
+// else if(b>a)
+// {
+//     large=b;
+//     alert(b +" is the largest one")
+// }
+// else if(a==b)
+// {
+//    alert("both are equal")
+// }
+// **task 3***/
+// var a=+prompt("enter a number")
+// if(a<0)
+// {
+//     alert("the number is negative")
+// }
+// else if(a>0)
+// {
+//     alert("the number is positive")
+// }
+// else if(a==0)
+// {
+//     alert("number is zero")
+// }
+//**task 4** */
+// var str=prompt("enter a character")
+// if(str=== "a" || str=== "A" || str=== "E" || str=== "e" || str=== "i" || str=== "I" || str=== "O"  || str=== "o" || str=== "U" || str=== "u")
+// {
+//     alert("TRUE")
+// }
+// else
+// {
+//     alert("FALSE")
+// }
+//** task 5** */
+// var password="laiba123";
+// var password1=prompt("enter a password")
+// if(password1==" ")
+// {
+//     alert("enter a password")
+// }
+// else if(password1==password)
+// {
+//     alert("correct password")
+// }
+// else if(password1!==password)
+// {
+//     alert("incorrect passwoord")
+// }
+//**task 6** */
+// 
+//** task 7** */
+// var time=prompt("enter the time")
+// if(time==1900)
+// {
+//     if(time>=0000 && time<=1200)
+//     {
+//         alert("GOOD MORNING")
+//     }
+//     else if(time>=1200 && time<1700)
+//     {
+//         alert("GOOD AFTERNOON")
+//     }
+//     else if(time>=1700 && time<2100)
+//     {
+//         alert("GOOD EVENING")
+//     }
+//     else if(time>=2100 && time<=2359)
+//     {
+//         alert("GOOD NIGHT")
+//     }
+// }
+
+
+
+//CHAPTER 14-16;
+//** task 1** */
+//var arr=[];
+//** task 2** */
+//var arr=new Array();//
+//** task 3** */
+//var strarray=["laiba","areeba","hamza","muneeba"];//
+//** task 4** */
+// var numarray=[1,2,3,4];
+// ** task 5** */
+// var booleanarray=["&&",||,!];
+// ** task 6***/
+// var mixedarray=["laiba",1,"apple"];
+//**task 7 ***/
+// var educatearr=[ "SSC", "HSC", "BCS",
+//     "BS", "BCOM", "MS", "M. Phil.", "PhD" ];
+//  document.write("<h1> QUALIFICATIONS</h1><br>")
+//  for(var i=0;i <educatearr.length;i++)
+//  {
+//      document.write(i+ " ) "+ educatearr[i]+"<br>");
+//  }
+//**task 8** */
+// var students=["MICHEAL","JOHN","TONY"];
+// var marks=["320","230","480"];
+// var per=[];
+// for(var i=0;i<marks.length;i++)
+// {
+//      per[i]=marks[i]/500*100;
+// }
+// for(var j=0;j<students.length;j++)
+// {
+//     document.write("Score of " + students[j] + "is" + marks[j] + ".Percentage is:" + per[j] + "%<br>")
+// }
+//**task 9** */
+//var color=["red","yellow","green","purple"];
+// var b=prompt("enter the value")
+// var d=prompt("enter a value")
+// var c=prompt("enter a value")
+// for(var i=0;i<color.length;i++)
+// {
+//     document.write(color[i] +  "  ");
+// }
+//  color.unshift(b);
+// for(var i=0;i<color.length;i++)
+// {
+//     document.write(color[i] + " <br> ");
+// }
+// color.push(c);
+// for(var i=0;i<color.length;i++)
+// {
+//     document.write(color[i] + " <br> ");
+// }
+// color.unshift(b,d);
+// for(var i=0;i<color.length;i++)
+// {
+//     document.write(color[i] + " <br> ");
+// }
+// color.shift(0);
+// for(var i=0;i<color.length;i++)
+// {
+//     document.write(color[i] + "<br>")
+// }
+// color.pop();
+// for(var i=0;i<color.length;i++)
+//  {
+//      document.write(color[i] + "<br>")
+//  }
+// var e=prompt("enter the position you want to enter the elemnet")
+// var f=prompt("enter the element")
+// color.splice(e,0,f)
+// for(var i=0;i<color.length;i++)
+//  {
+//      document.write(color[i] + "<br>")
+//  }
+// var g=prompt("enter the position form where you want to delete")
+// var h=prompt("enter the number how may elements you want to delete")
+// color.splice(g,h);
+// for(var i=0;i<color.length;i++)
+//  {
+//      document.write(color[i] + "<br>")
+//  }
+//**task 10** */
+// var scores=[320,230,480,120];
+// document.write("<h1>UNORDERED SCORES OF STUDENTS</h1><br>")
+// for(var i=0;i<scores.length;i++)
+// {
+//     document.write(scores[i] + ",")
+// }
+// document.write("<h1> ORDERED SCORE OF STUDENTS</h1><br>")
+// scores.sort();
+// for(var i=0;i<scores.length;i++)
+// {
+//     document.write(scores[i] + ",")
+// }
+//**task 11** */
+// var cities=['karachi','lahore','islamabad','peshawar','quetta'];
+// document.write("<h1> CITIES LIST</h1><br>")
+// for(var i=0;i<cities.length;i++)
+// {
+//     document.write(cities[i]+",")
+// }
+// var selected=[];
+// selected=cities.slice(1,4);
+// document.write("<br><h1>SELECTED CITIES</h1><br>")
+// for(var i=0;i<selected.length;i++)
+// {
+//     document.write(selected[i]+",")
+// }
+//** task 12** */
+// var arr=["This","is","my","cat"];
+// var arr1=[];
+// document.write("<h1>ARRAY:<br>")
+// for(var i=0;i<arr.length;i++)
+// {
+//     document.write(arr[i] + ",")
+// }
+// document.write("<br>")
+// arr.join()
+// document.write("STRING:<br>")
+// for(var i=0;i<arr.length;i++)
+// {
+//     document.write(arr[i] + "   ")
+// }
+
+//**task 13** */
+// var devices=["keyboard","mouse","printer","monitor"];
+// document.write("<h1>DEVICES:<br>")
+// for(var i=0;i<devices.length;i++)
+// {
+//     document.write(devices[i] + "," +  "  ")
+//  }
+//   document.write("<br>OUT:<br>");
+//   document.write(devices.shift());
+//   document.write("<br>OUT:<br>");
+//   document.write(devices.shift());
+//   document.write("<br>OUT:<br>");
+//   document.write(devices.shift());
+//   document.write("<br>OUT:<br>");
+//   document.write(devices.shift());
+
+//**task 14** */
+// var devices=["keyboard","mouse","printer","monitor"];
+// document.write("<h1>DEVICES:<br>")
+// for(var i=0;i<devices.length;i++)
+// {
+//     document.write(devices[i] + "," +  "  ")
+//  }
+//   document.write("<br>OUT:<br>");
+//   document.write(devices.pop());
+//   document.write("<br>OUT:<br>");
+//   document.write(devices.pop());
+//   document.write("<br>OUT:<br>");
+//   document.write(devices.pop());
+//   document.write("<br>OUT:<br>");
+//   document.write(devices.pop());
+//**task 15** */
+// var phones=["apple","samsung","sony","haier","nokia","motorolla"];
+// document.write("<h1><select>")
+// {
+//     for(var i=0;i<phones.length;i++)
+//     document.write("<option>" + phones[i] + "</option>")
+// }
+// document.write("</select></h1>")
+
+
+
+
+//CHAPTER 17-20//
+//**task 1** */
+//let activities = [];
+//**task 2** */
+// var number=[
+//     [0,1,2,3],
+//     [1,0,1,2],
+//     [2,1,0,1],
+// ];
+// for( var i=0;i<number.length;i++)
+// {
+//     document.write(number[i] + "<br>")
+// }
+// 
+//** task 3** */
+//for(var i=1;i<=10;i++)
+// {
+//     document.write(i+ "<br>")
+// }
+// ** task 4***/
+// var number=prompt("enter the number")
+// var length=prompt("enter the length of the table")
+// var c;
+// document.write("MULTIPLICATION TABLE OF " + number + "<br>")
+// document.write("LENGTH=" + length + "<br>")
+// for(var i=1;i<=length;i++)
+// {
+//     c=number*i;
+//     document.write(number + "*" + i + "=" + c + "<br>")
+// }
+// ** task 5***/
+// var fruits=["apple","banana","mango","orange","strawberry"]
+// for(var i=0;i<fruits.length;i++)
+// {
+//     document.write(fruits[i] + "<br>")
+// }
+// for( var i=0;i<fruits.length;i++)
+// {
+// document.write("element at index " + i + " is " + fruits[i] + "<br>")
+
+// }
+//**task 6** */
+// var arr1=[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15];
+// var c;
+// var k;
+// document.write("<h1>COUNTING:</h1><br>")
+// for(var i=0;i<arr1.length;i++)
+// {
+//     document.write(arr1[i] + "  ")
+// }
+// document.write("<h1>REVERSED ORDER:</h1><br>")
+// arr1.reverse();
+// for(var i=0;i<arr1.length;i++)
+// {
+//     document.write(arr1[i] + "  ")
+// }
+// arr1.reverse();
+// document.write("<h1>EVEN:</h1><br>")
+// for(var i=0;i<arr1.length;i++)
+// {
+//     if(arr1[i]%2==0)
+//     {
+//         document.write(arr1[i] + "  ")
+//     }
+// }
+// document.write("<h1>ODD:</h1><br>")
+// for(var i=0;i<arr1.length;i++)
+// {
+//     if(arr1[i]%2!==0)
+//     {
+//         document.write(arr1[i] + "  ")
+//     }
+// }
+// document.write("<h1>SERIES:</h1><br>")
+// for(var i=0;i<arr1.length;i++)
+// {
+//     if(arr1[i]%2==0)
+//     {
+        
+//         document.write(arr1[i] + k + "  ")
+//     }
+// }
+//**task 7** */
+// var bakery=["cake","applepie","cookies","chips","patties"];
+// var item=prompt("Welcome to ABC bakery.what do you want sir/maa'm")
+// //check//
+// if(bakery.indexOf(item)!== -1)
+// {
+//     document.write(item + " is available at our bakery")
+
+// }
+// else
+// {
+//     document.write(item + " is not available in our bakery")
+// }
+// **task 8***/
+// var number=[24,53,78,91,42,12];
+// var largest=0;
+// for(var i=0;i<number.length;i++)
+// {
+//     if(number[i]>largest)
+//     largest=number[i];
+// }
+// document.write("the largest number is " + largest)
+//** task 9** */
+// var number=[24,53,78,91,42,12];
+// var smallest=number[0];
+// for(var i=0;i<number.length;i++)
+// {
+//     if(number[i]<smallest)
+//     smallest=number[i];
+// }
+// document.write("the smallest number is " + smallest)
+
+//**task 10** */
+// var i;
+// for(var i=1;i<=100;i++)
+// {
+//     if(i%5==0)
+//     {
+//         document.write(i + ",")
+//     }
+// }
